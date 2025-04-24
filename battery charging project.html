@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battery charge</title>
+    <style>
+        @keyframes appear {
+            0% {
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            /* Horizontally center */
+            align-items: center;
+            /* Vertically center */
+            height: 100vh;
+            /* Vertically center */
+            margin: 0%;
+            /* Remove default margin */
+        }
+        
+        .box {
+            width: 150px;
+            background-color: rgb(248, 242, 235);
+            height: 100px;
+            border-radius: 0%;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        
+        .box1 {
+            width: 25px;
+            background-color: black;
+            height: 70px;
+        }
+        
+        .red {
+            background-color: red;
+            width: 35px;
+            height: 100px;
+            opacity: 0;
+            animation: appear 5s infinite;
+            animation-delay: 0s;
+        }
+        
+        .yellow1 {
+            background-color: rgb(255, 225, 0);
+            width: 35px;
+            height: 100px;
+            opacity: 0;
+            flex-direction: column;
+            animation: appear 5s infinite;
+            animation-delay: 1s;
+        }
+        
+        .yellow2 {
+            background-color: rgb(198, 239, 35);
+            width: 35px;
+            opacity: 0;
+            height: 100px;
+            animation: appear 5s infinite;
+            animation-delay: 2s;
+        }
+        
+        .green {
+            background-color: rgb(58, 216, 37);
+            width: 35px;
+            height: 100px;
+            opacity: 0;
+            animation: appear 5s infinite;
+            animation-delay: 3s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="red"></div>
+        <div class="yellow1"></div>
+        <div class="yellow2"></div>
+        <div class="green"></div>
+    </div>
+    <div class="box1"></div>
+
+</body>
+
+</html>
